@@ -1,0 +1,8 @@
+/Users/vzie/Projects/Tarea2/Tarea2/bin/Debug/netstandard2.0/Tarea2.deps.json
+/Users/vzie/Projects/Tarea2/Tarea2/bin/Debug/netstandard2.0/Tarea2.dll
+/Users/vzie/Projects/Tarea2/Tarea2/bin/Debug/netstandard2.0/Tarea2.pdb
+/Users/vzie/Projects/Tarea2/Tarea2/obj/Debug/netstandard2.0/Tarea2.csproj.CoreCompileInputs.cache
+/Users/vzie/Projects/Tarea2/Tarea2/obj/Debug/netstandard2.0/Tarea2.AssemblyInfoInputs.cache
+/Users/vzie/Projects/Tarea2/Tarea2/obj/Debug/netstandard2.0/Tarea2.AssemblyInfo.cs
+/Users/vzie/Projects/Tarea2/Tarea2/obj/Debug/netstandard2.0/Tarea2.dll
+/Users/vzie/Projects/Tarea2/Tarea2/obj/Debug/netstandard2.0/Tarea2.pdb

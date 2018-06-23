@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage BackgroundColor="White" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Tarea2" x:Class="Tarea2.MainPage">
+    <StackLayout Padding="30" Orientation="Vertical">
+        <Entry BackgroundColor="Silver" PlaceholderColor="White" x:Name="txtUsername" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Usuario" />
+        <Entry BackgroundColor="Silver" PlaceholderColor="White"  x:Name="txtPassword" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Clave" IsPassword="true" />
+        <Button x:Name="btnLogin"  Text="Iniciar Session" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#639fff" TextColor="White" />
+        <Button x:Name="btnRegister"  Text="Registrarse" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#639fff" TextColor="White" Clicked="Handle_Clicked" />
+    </StackLayout>
+</ContentPage>

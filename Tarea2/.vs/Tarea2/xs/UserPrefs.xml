@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{53F786F5-B142-4168-BD0F-4081EB38E7DC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tarea2/App.xaml">
+    <Files>
+      <File FileName="Tarea2/App.xaml" Line="5" Column="15" />
+      <File FileName="Tarea2/MainPage.xaml.cs" Line="6" Column="21" />
+      <File FileName="Tarea2/Views/Register.xaml" Line="13" Column="15" />
+      <File FileName="Tarea2/Views/Register.xaml.cs" Line="10" Column="25" />
+      <File FileName="Tarea2/App.xaml.cs" Line="11" Column="6" />
+      <File FileName="Tarea2/MainPage.xaml" Line="9" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Tarea2.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Tarea2.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9F018B79-1FF6-47A9-9912-CF950B8240A1" />
+</Properties>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="White" Title="Registrarse" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tarea2.Views.Register">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Orientation="Vertical">
+            <Entry PlaceholderColor="White" TextColor='White' BackgroundColor="Silver" x:Name="txtFirstName" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Nombre" />
+            <Entry PlaceholderColor="White" TextColor='White' BackgroundColor="Silver" x:Name="txtLastName" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Apellidos" />
+            <Entry PlaceholderColor="White" TextColor='White' BackgroundColor="Silver" x:Name="txtId" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="ID/Usuario" IsPassword="true" />
+            <Entry PlaceholderColor="White" TextColor='White' BackgroundColor="Silver" x:Name="txtPassword" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Clave" IsPassword="true" />
+            <Entry PlaceholderColor="White" TextColor='White' BackgroundColor="Silver" x:Name="txtPasswordConfirm" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Placeholder="Confirmar Clave" IsPassword="true" />
+            <Button x:Name="btnRegister"  Text="Registar" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#639fff" TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
