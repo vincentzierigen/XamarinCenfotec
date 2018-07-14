@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{A821C68D-A72D-4A21-844F-A043352EEB49}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookClient/BookClient/Data/BookManager.cs">
+    <Files>
+      <File FileName="BookClient/BookClient/Data/Book.cs" Line="1" Column="1" />
+      <File FileName="BookClient/BookClient/Data/BookManager.cs" Line="63" Column="6" />
+      <File FileName="BookClient/BookClient/Properties/AssemblyInfo.cs" Line="15" Column="20" />
+      <File FileName="BookClient/BookClient/MainPage.xaml" Line="41" Column="15" />
+      <File FileName="BookClient/BookClient/MainPage.xaml.cs" Line="19" Column="23" />
+      <File FileName="BookClient/BookClient/packages.config" Line="1" Column="1" />
+      <File FileName="BookClient/BookClient/AddEditBookPage.cs" Line="11" Column="21" />
+      <File FileName="BookClient/BookClient/App.cs" Line="1" Column="1" />
+      <File FileName="BookClient/BookClient.iOS/Main.cs" Line="20" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BookClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9F018B79-1FF6-47A9-9912-CF950B8240A1" />
+</Properties>
