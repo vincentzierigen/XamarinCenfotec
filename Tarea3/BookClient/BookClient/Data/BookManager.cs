@@ -41,6 +41,15 @@ namespace BookClient.Data
       return JsonConvert.DeserializeObject<IEnumerable<Book>>(result);
     }
 
+    public async Task<Book> GetOne(string isbn)
+    {
+      // TODO: use GET to retrieve books
+      HttpClient client = await GetClient();
+      string result = await client.GetStringAsync(Url+isbn);
+      
+      return JsonConvert.DeserializeObject<Book>(result);
+    }
+
     public async Task<Book> Add(string title, string author, string genre)
     {
       // TODO: use POST to add a book

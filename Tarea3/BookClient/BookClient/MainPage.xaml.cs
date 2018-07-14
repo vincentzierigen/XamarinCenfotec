@@ -9,69 +9,96 @@ using Xamarin.Forms;
 
 namespace BookClient
 {
-    public partial class MainPage : ContentPage
+  public partial class MainPage : ContentPage
+  {
+    readonly IList<Book> books = new ObservableCollection<Book>();
+    readonly BookManager manager = new BookManager();
+
+    public MainPage()
     {
-        readonly IList<Book> books = new ObservableCollection<Book>();
-        readonly BookManager manager = new BookManager();
-
-        public MainPage()
-        {
-            BindingContext = books;
-            InitializeComponent();
-        }
-
-        async void OnRefresh(object sender, EventArgs e)
-        {
-            // Turn on network indicator
-            this.IsBusy = true;
-
-            try {
-                var bookCollection = await manager.GetAll();
-
-                foreach (Book book in bookCollection)
-                {
-                    if (books.All(b => b.ISBN != book.ISBN))
-                        books.Add(book);
-                }
-            }
-            finally {
-                this.IsBusy = false;
-            }
-        }
-
-        async void OnAddNewBook(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(
-                new AddEditBookPage(manager, books));
-        }
-
-        async void OnEditBook(object sender, ItemTappedEventArgs e)
-        {
-            await Navigation.PushModalAsync(
-                new AddEditBookPage(manager, books, (Book)e.Item));
-        }
-
-        async void OnDeleteBook(object sender, EventArgs e)
-        {
-            MenuItem item = (MenuItem)sender;
-            Book book = item.CommandParameter as Book;
-            if (book != null)
-            {
-                if (await this.DisplayAlert("Delete Book?",
-                    "Are you sure you want to delete the book '"
-                        + book.Title + "'?", "Yes", "Cancel") == true)
-                {
-                    this.IsBusy = true;
-                    try {
-                        await manager.Delete(book.ISBN);
-                        books.Remove(book);
-                    }
-                    finally {
-                        this.IsBusy = false;
-                    }
-
-                }
-            }
-        }
+      BindingContext = books;
+      InitializeComponent();
     }
+
+    async void OnRefresh(object sender, EventArgs e)
+    {
+      // Turn on network indicator
+      this.IsBusy = true;
+
+      try
+      {
+        var bookCollection = await manager.GetAll();
+
+        foreach (Book book in bookCollection)
+        {
+          if (books.All(b => b.ISBN != book.ISBN))
+            books.Add(book);
+        }
+      }
+      finally
+      {
+        this.IsBusy = false;
+      }
+    }
+
+    async void OnSearch(object sender, EventArgs e)
+    {
+      // Turn on network indicator
+      this.IsBusy = true;
+
+      try
+      {
+        var book = await manager.GetOne(this.searchTxt.Text);
+        books.Clear();
+        books.Add(book);
+
+      }
+      finally
+      {
+        this.IsBusy = false;
+      }
+    }
+
+    void Handle_Activated(object sender, System.EventArgs e)
+    {
+      throw new NotImplementedException();
+    }
+
+    async void OnAddNewBook(object sender, EventArgs e)
+    {
+      await Navigation.PushModalAsync(
+          new AddEditBookPage(manager, books));
+    }
+
+    async void OnEditBook(object sender, ItemTappedEventArgs e)
+    {
+      await Navigation.PushModalAsync(
+          new AddEditBookPage(manager, books, (Book)e.Item));
+    }
+
+    async void OnDeleteBook(object sender, EventArgs e)
+    {
+      MenuItem item = (MenuItem)sender;
+      Book book = item.CommandParameter as Book;
+      if (book != null)
+      {
+        if (await this.DisplayAlert("Delete Book?",
+            "Are you sure you want to delete the book '"
+                + book.Title + "'?", "Yes", "Cancel") == true)
+        {
+          this.IsBusy = true;
+          try
+          {
+            await manager.Delete(book.ISBN);
+            books.Remove(book);
+          }
+          finally
+          {
+            this.IsBusy = false;
+          }
+
+        }
+      }
+    }
+  }
 }

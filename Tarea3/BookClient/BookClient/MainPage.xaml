@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookClient.MainPage" x:Name="ThePage">
@@ -8,6 +8,7 @@
       </ContentPage.ToolbarItems>
 
     <Grid>
+        
         <ListView ItemsSource="{Binding}"
                   ItemTapped="OnEditBook">
             <ListView.ItemTemplate>
@@ -22,6 +23,11 @@
               </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        
+        <StackLayout BackgroundColor="Gray" WidthRequest="1000" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <Entry x:Name="searchTxt" BackgroundColor="Gray" TextColor="White" Placeholder="ISBN to search" PlaceholderColor="White"/>
+            <Button Clicked="OnSearch" TextColor="White" Text="Search" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
 
         <!-- Challenge exercise - add Activity Indicator -->
         <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"

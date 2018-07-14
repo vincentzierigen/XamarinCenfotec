@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{A821C68D-A72D-4A21-844F-A043352EEB49}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BookClient/BookClient/Data/BookManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookClient/BookClient/MainPage.xaml">
     <Files>
       <File FileName="BookClient/BookClient/Data/Book.cs" Line="1" Column="1" />
       <File FileName="BookClient/BookClient/Data/BookManager.cs" Line="63" Column="6" />
       <File FileName="BookClient/BookClient/Properties/AssemblyInfo.cs" Line="15" Column="20" />
-      <File FileName="BookClient/BookClient/MainPage.xaml" Line="41" Column="15" />
-      <File FileName="BookClient/BookClient/MainPage.xaml.cs" Line="19" Column="23" />
+      <File FileName="BookClient/BookClient/MainPage.xaml" Line="13" Column="34" />
+      <File FileName="BookClient/BookClient/MainPage.xaml.cs" Line="44" Column="7" />
       <File FileName="BookClient/BookClient/packages.config" Line="1" Column="1" />
       <File FileName="BookClient/BookClient/AddEditBookPage.cs" Line="11" Column="21" />
       <File FileName="BookClient/BookClient/App.cs" Line="1" Column="1" />
       <File FileName="BookClient/BookClient.iOS/Main.cs" Line="20" Column="2" />
+      <File FileName="BookClient/BookClient/obj/Debug/MainPage.xaml.g.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
